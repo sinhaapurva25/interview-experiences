@@ -1,0 +1,19 @@
+Algorithm for composite:
+inputs: base_Image,top_Image, Alpha_Image 
+
+1. Threshold the alpha image. If pixel at position [i][j]of Alpha_Image is less than 0, meaning,
+	if (Alpha_Image[i][j]>0)
+		Alpha_Image[i][j]=1.
+
+2. Multiply top_Image and Alpha_Image[i][j]. This step retains only those pixels are to be masked with the top_Image.
+	top' = top_Image * Alpha_Image
+
+3. Invert the Alpha_Image, so as to obtain the regions from the base_image on which the top_image is masked.
+	if (Alpha_Image[i][j]=1)
+		Alpha_Image[i][j]=0
+	else 	Alpha_Image[i][j]=1
+
+4. Multiply base_Image and Alpha_Image[i][j]. This step retains only those pixels in the base_Image on which the top' image will be masked on.
+	base' = base_Image * Alpha_Image
+
+5. Adding the top' and base' gives the composite image.

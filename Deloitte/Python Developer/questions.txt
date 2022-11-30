@@ -1,0 +1,78 @@
+## Diff bw extend and append in Python
+https://www.codingem.com/python-append-vs-extend/#:~:text=In%20Python%2C%20the%20difference%20between%20the%20append%20%28%29,list.%20The%20extend%20%28%29%20method%20adds%20multiple%20items.
+
+## Rotate a given array by a given position k
+----------------What I wrote-------------------
+def rotate(items,r):
+    items[2:2]
+    # return [items[i%r] for i in range(len(items))]
+    k = 0
+    for i in range(len(items)):
+        if k > len(items)-1:
+            k = 0
+        else:
+            k += r
+        print(items[k])
+
+items = [7,100,46,44,95,60]
+'''print(rotate(items,4))'''
+rotate(items,4)
+----------------Running solution-------------------
+items = ['a','b','c','d','e','f','g','h']
+print('items    ',end=' ')
+[print(i,end=' ') for i in items]
+print()
+r = 3
+for c in range(8):
+    print('items,r=',c,' ',sep='',end='')
+    r = c
+    for i in range(len(items)):
+        k = i+r
+        if k >= len(items):
+            k = k - len(items)
+        print(items[k],end=' ')
+    print()
+
+## Decorators
+Explain
+Example I showed
+
+l = [1,2,3,4]
+z = [1,2]
+
+z= z.append(l)
+print(z)
+
+# print(l.extend([1,2,3,4]))
+
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def operation(f,a,b):
+    return f(a,b)
+
+print(operation(add,5,6))
+
+## Pandas
+Diff bw r'<path>' and '<path>'
+How would you read a CSV file?
+What is the default delimeter in pandas.read_csv?
+It is commas
+import pandas as pd
+df1 = pd.read_csv(r'qwerty.txt',sep='|')
+
+How do I change the column type of a certain column in a Dataframe?
+
+import pandas as pd
+df_temp = pd.DataFrame(columns=['month'])
+for i in df1['month']:
+    df_temp.loc[(len(df_temp))]=str(i)
+
+df1['month']=df_temp
+
+
+## urllib, how would you use it?
+You have to extract some inform from a URL, that's your Data Lake

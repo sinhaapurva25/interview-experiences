@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imgpro", "imgpro.vcxproj", "{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106} = {F4124FFA-807E-4186-AF40-4BD28B0FE106}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "morphlines", "morphlines.vcxproj", "{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106} = {F4124FFA-807E-4186-AF40-4BD28B0FE106}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "R2", "R2\R2.vcxproj", "{F4124FFA-807E-4186-AF40-4BD28B0FE106}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jpeg", "jpeg\jpeg.vcxproj", "{1C35E066-73AC-40AC-97A2-51C0DB7C6577}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fglut", "fglut\fglut.vcxproj", "{F4124FFA-807E-4186-AF40-4BD28B0FE105}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{F9CCB9FA-8D9E-44F0-BB4D-74DBB38F0892}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pkgs", "pkgs", "{D9078DBB-8383-4178-BF5A-B79CAEF64ABA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086}.Debug|Win32.ActiveCfg = Debug|Win32
+		{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086}.Debug|Win32.Build.0 = Debug|Win32
+		{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086}.Release|Win32.ActiveCfg = Release|Win32
+		{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086}.Release|Win32.Build.0 = Release|Win32
+		{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5}.Debug|Win32.Build.0 = Debug|Win32
+		{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5}.Release|Win32.ActiveCfg = Release|Win32
+		{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5}.Release|Win32.Build.0 = Release|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106}.Debug|Win32.Build.0 = Debug|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106}.Release|Win32.ActiveCfg = Release|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106}.Release|Win32.Build.0 = Release|Win32
+		{1C35E066-73AC-40AC-97A2-51C0DB7C6577}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C35E066-73AC-40AC-97A2-51C0DB7C6577}.Debug|Win32.Build.0 = Debug|Win32
+		{1C35E066-73AC-40AC-97A2-51C0DB7C6577}.Release|Win32.ActiveCfg = Release|Win32
+		{1C35E066-73AC-40AC-97A2-51C0DB7C6577}.Release|Win32.Build.0 = Release|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE105}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE105}.Debug|Win32.Build.0 = Debug|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE105}.Release|Win32.ActiveCfg = Release|Win32
+		{F4124FFA-807E-4186-AF40-4BD28B0FE105}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43D66F45-1ABC-4DBE-AD2D-2785854B7BE5} = {F9CCB9FA-8D9E-44F0-BB4D-74DBB38F0892}
+		{08E9F7AD-6CC9-4DD0-96F5-3625A50A0086} = {F9CCB9FA-8D9E-44F0-BB4D-74DBB38F0892}
+		{F4124FFA-807E-4186-AF40-4BD28B0FE105} = {D9078DBB-8383-4178-BF5A-B79CAEF64ABA}
+		{1C35E066-73AC-40AC-97A2-51C0DB7C6577} = {D9078DBB-8383-4178-BF5A-B79CAEF64ABA}
+		{F4124FFA-807E-4186-AF40-4BD28B0FE106} = {D9078DBB-8383-4178-BF5A-B79CAEF64ABA}
+	EndGlobalSection
+EndGlobal

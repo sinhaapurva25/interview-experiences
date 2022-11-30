@@ -1,0 +1,66 @@
+#
+# nmake Makefile for producing Challenge output
+#
+
+EXE=src\debug\imgpro
+
+IMGS=output/princeton_small_brightness_0.0.jpg \
+     output/princeton_small_brightness_0.5.jpg \
+     output/princeton_small_brightness_2.0.jpg \
+     output/c_contrast_-0.5.jpg \
+     output/c_contrast_0.0.jpg \
+     output/c_contrast_0.5.jpg \
+     output/c_contrast_2.0.jpg \
+     output/blur_0.125.jpg \
+     output/blur_2.jpg \
+     output/blur_8.jpg \
+     output/sharpen.jpg \
+     output/edgedetect.jpg \
+     output/scale_gaussian.jpg \
+     output/scale_point.jpg \
+     output/scale_bilinear.jpg \
+     output/composite.jpg
+
+all: $(IMGS)
+
+output/princeton_small_brightness_0.0.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -brightness 0.0
+output/princeton_small_brightness_0.5.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -brightness 0.5
+output/princeton_small_brightness_2.0.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -brightness 2.0
+	
+output/c_contrast_-0.5.jpg: input/c.jpg
+	$(EXE) $** $@ -contrast -0.5
+output/c_contrast_0.0.jpg: input/c.jpg
+	$(EXE) $** $@ -contrast 0.0
+output/c_contrast_0.5.jpg: input/c.jpg
+	$(EXE) $** $@ -contrast 0.5
+output/c_contrast_2.0.jpg: input/c.jpg
+	$(EXE) $** $@ -contrast 2.0
+
+output/blur_0.125.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -blur 0.125
+output/blur_2.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -blur 2
+output/blur_8.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -blur 8
+
+output/sharpen.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -sharpen
+
+output/edgedetect.jpg: input/princeton_small.jpg
+	$(EXE) $** $@ -edge
+
+output/scale_gaussian.jpg: input/scaleinput.jpg
+	$(EXE) $** $@ -gaussian_sampling -scale 0.3 0.3
+output/scale_point.jpg: input/scaleinput.jpg
+	$(EXE) $** $@ -point_sampling -scale 0.3 0.3
+output/scale_bilinear.jpg: input/scaleinput.jpg
+	$(EXE) $** $@ -bilinear_sampling -scale 0.3 0.3
+
+output/composite.jpg: input/comp_background.jpg
+	$(EXE) $** $@ -composite input/comp_background.jpg input/comp_foreground.jpg input/comp_mask.jpg 0
+
+clean:
+	del $(IMGS)

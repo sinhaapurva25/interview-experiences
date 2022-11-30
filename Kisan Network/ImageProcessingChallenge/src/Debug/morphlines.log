@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (imgpro.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  morphlines.cpp
+  R2Image.cpp
+  R2Pixel.cpp
+  Generating Code...
+  morphlines.vcxproj -> C:\Users\sinha\Music\ImageProcessingChallenge\ImageProcessingChallenge\src\Debug\morphlines.exe

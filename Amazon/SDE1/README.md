@@ -1,0 +1,1 @@
+Interview type: HackerRank challenge

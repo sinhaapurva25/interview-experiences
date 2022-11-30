@@ -1,0 +1,4 @@
+for (i=0; i<N; i=i+1)
+    for (j=N-i; j>0; j=j-1)
+        if(a[j]>a[j+1])
+            swap(a[j],[j+1])

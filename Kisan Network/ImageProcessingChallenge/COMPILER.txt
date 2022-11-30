@@ -1,0 +1,31 @@
+Linux / Ubuntu:
+
+Install the latest versions of the g++, libgl1-mesa-glx, libgl1-mesa-dev,
+libglu1-mesa, libglu1-mesa-dev, and make packages 
+(along with all dependencies).
+
+
+Linux / Fedora:
+
+Install the latest versions of the gcc-c++, mesa-libGL, mesa-libGL-devel,
+mesa-libGLU, mesa-libGLU-devel, and make packages
+(along with all dependencies).
+
+
+Mac:
+
+Install the XCode development environment.  It should come with the
+g++ compiler, make, and the OpenGL and GLUT "frameworks".
+
+
+Windows:
+
+You have two options:
+
+1. Install Microsoft Visual C++ 2010 Express from
+http://www.microsoft.com/express/Downloads/#2010-Visual-CPP
+
+2. Instead of using Microsoft's compiler, you can get a Unix-like
+development environment by installing Cygwin from http://www.cygwin.com/
+When selecting packages to install, be sure to include the gcc4-g++,
+opengl, and make packages.
