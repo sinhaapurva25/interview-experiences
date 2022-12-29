@@ -15,6 +15,8 @@ All of these 25 interviews I have earned by either applying online on the compan
 
 [Blue Sky Analytics Data Scientist](https://github.com/sinhaapurva25/interview-experiences/tree/main/Blue%20Sky%20Analytics/Data%20Scientist)
 
+[Disecto Software Engineer](https://github.com/sinhaapurva25/interview-experiences/tree/main/Disecto)
+
 [Amazon SDE1](https://github.com/sinhaapurva25/interview-experiences/tree/main/Amazon/SDE1%262)
 
 [Cisco Set-1](https://github.com/sinhaapurva25/interview-experiences/tree/main/Cisco/Set-1)
@@ -55,3 +57,6 @@ All of these 25 interviews I have earned by either applying online on the compan
 
 
 [pwc Pyspark Developer/Data Engineer](https://github.com/sinhaapurva25/interview-experiences/tree/main/pwc/Pyspark%20Developer)
+
+
+[Walmart Data Engineer-III](https://github.com/sinhaapurva25/interview-experiences/tree/main/Walmart/Data%20Engineer)
