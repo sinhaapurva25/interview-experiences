@@ -1,0 +1,21 @@
+1. Reverse a string.
+2. Print the result in one line.
+3. Explain Lambda, Return, Map, New keywords
+4. LCM - write a code
+5. Why Python? Java also has OOPs and has a community, why then?
+6. Which OOP features are not possible in Python? - Function Overloading
+7. Which OOP features are possible in Python?
+8. Explain Polymorphism.
+9. Explain overriding and overloading. https://www.geeksforgeeks.org/difference-between-method-overloading-and-method-overriding-in-python/
+10.   a = []
+      b = []
+      a=b=[]
+      what will be the id of a and b in both cases.
+11. Difference between lists, array and numpy array.
+12. Garbage collection in Python. https://www.studytonight.com/python/python-garbage-collection#:~:text=Garbage%20collection%20in%20Python%20works%20automatically.%20When%20no,memory%20management%20and%20prevents%20the%20wastage%20of%20memory.
+13. Map function
+14. Lambda function.
+12. Map+lambda function.
+15. List vs Numpy - went through examples
+16. How do you test your code? You don't write unit tests?
+17. ExceptionHandling? What keywords? Else?

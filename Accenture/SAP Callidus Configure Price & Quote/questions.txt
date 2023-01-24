@@ -1,0 +1,7 @@
+Basic questions around Python, Programming, Git
+
+## When does Git timeout?
+
+## Implement Insertion sot
+
+## Class/Object/Inheritance/Polymorphism

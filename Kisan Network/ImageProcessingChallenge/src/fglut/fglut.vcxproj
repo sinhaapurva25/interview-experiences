@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4124FFA-807E-4186-AF40-4BD28B0FE105}</ProjectGuid>
+    <RootNamespace>fglut</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>jpeg</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_JPEG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="fglut.h" />
+    <ClInclude Include="freeglut.h" />
+    <ClInclude Include="freeglut_ext.h" />
+    <ClInclude Include="freeglut_internal.h" />
+    <ClInclude Include="freeglut_std.h" />
+    <ClInclude Include="freeglut_teapot_data.h" />
+    <ClInclude Include="glut.h" />
+    <ClInclude Include="cygwin_config.h" />
+    <ClInclude Include="linux_config.h" />
+    <ClInclude Include="mac_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="freeglut_callbacks.c" />
+    <ClCompile Include="freeglut_cursor.c" />
+    <ClCompile Include="freeglut_display.c" />
+    <ClCompile Include="freeglut_ext.c" />
+    <ClCompile Include="freeglut_font.c" />
+    <ClCompile Include="freeglut_glutfont_definitions.c" />
+    <ClCompile Include="freeglut_font_data.c" />
+    <ClCompile Include="freeglut_stroke_roman.c" />
+    <ClCompile Include="freeglut_stroke_mono_roman.c" />
+    <ClCompile Include="freeglut_gamemode.c" />
+    <ClCompile Include="freeglut_geometry.c" />
+    <ClCompile Include="freeglut_init.c" />
+    <ClCompile Include="freeglut_input_devices.c" />
+    <ClCompile Include="freeglut_spaceball.c" />
+    <ClCompile Include="freeglut_joystick.c" />
+    <ClCompile Include="freeglut_main.c" />
+    <ClCompile Include="freeglut_menu.c" />
+    <ClCompile Include="freeglut_misc.c" />
+    <ClCompile Include="freeglut_overlay.c" />
+    <ClCompile Include="freeglut_state.c" />
+    <ClCompile Include="freeglut_structure.c" />
+    <ClCompile Include="freeglut_teapot.c" />
+    <ClCompile Include="freeglut_videoresize.c" />
+    <ClCompile Include="freeglut_window.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

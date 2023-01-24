@@ -1,0 +1,27 @@
+--------------------------------------------------
+Exceptional Handling, frequency of words
+
+def func(x,y):
+	return x/y
+try:
+	func(5,7)
+except Arithmetic Exception as e:
+	print("an Arithmeti exception occured", e)
+
+-------------------
+
+lst = [12, 67, 45, 56]
+for i in range(len(lst):
+	for j in range(1,len(lst)-1):
+		if arr[i] > arr [j]:
+			arr[i], arr [j] = arr [j], arr [i]
+--------------------
+lst = [a, b, c, d, c]
+dct = dict()
+for i in lst:
+	if i in dct():
+		dct[i] += 1
+	else:
+		dct[i] = 1
+print(dct)
+-----

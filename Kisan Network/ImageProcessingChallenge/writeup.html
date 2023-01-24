@@ -1,0 +1,335 @@
+<html>
+
+<head>
+ <title>
+  Image Processing Challenge
+ </title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<br><hr>
+
+<center>
+<h2>
+Image Processing Challenge
+<br>
+NAME           <!-- Fill in your name and login -->
+</h2>                     
+</center>
+
+<br><hr>
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>List of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+I have implemented the following features:
+<ul>
+  <li><a href="#Brightness">Brightness</a></LI>
+  <li><a href="#Contrast">Contrast</a></LI>
+  <li><a href="#Blur">Blur</a></LI>
+  <li><a href="#Sharpen">Sharpen</a></LI>
+  <li><a href="#EdgeDetect">Edge detect</a></LI>
+  <li><a href="#Scale">Scale</a></LI>
+  <li><a href="#Composite">Composite</a></LI>
+</ul>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<h2>Demonstration of Implemented Features</h2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<h3><A name='Brightness'>Brightness</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brightness_0.0.jpg">
+      <img width=200 src="output/princeton_small_brightness_0.0.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brightness_0.5.jpg">
+      <img width=200 src="output/princeton_small_brightness_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brightness_2.0.jpg">
+      <img width=200 src="output/princeton_small_brightness_2.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Brightness 0.0 </td>
+    <td align="center"> Brightness 0.5 </td>
+    <td align="center"> Brightness 2.0 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      output/princeton_small_brightness_0.0.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -brightness 0.0 <br>
+      output/princeton_small_brightness_0.5.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -brightness 0.5 <br>
+      output/princeton_small_brightness_2.0.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -brightness 2.0 <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+ 
+<h3><A name='Contrast'>Contrast</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/c.jpg">
+      <img width=200 src="input/c.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_-0.5.jpg">
+      <img width=200 src="output/c_contrast_-0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_0.0.jpg">
+      <img width=200 src="output/c_contrast_0.0.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_0.5.jpg">
+      <img width=200 src="output/c_contrast_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_2.0.jpg">
+      <img width=200 src="output/c_contrast_2.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Contrast -0.5 </td>
+    <td align="center"> Contrast 0.0 </td>
+    <td align="center"> Contrast 0.5 </td>
+    <td align="center"> Contrast 2.0 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      output/c_contrast_-0.5.jpg: input/c.jpg<br>
+        $(EXE) $^ $@ -contrast -0.5 <br>
+      output/c_contrast_0.0.jpg: input/c.jpg <br>
+        $(EXE) $^ $@ -contrast 0.0 <br>
+      output/c_contrast_0.5.jpg: input/c.jpg <br>
+        $(EXE) $^ $@ -contrast 0.5 <br>
+      output/c_contrast_2.0.jpg: input/c.jpg <br>
+        $(EXE) $^ $@ -contrast 2.0 <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+
+<h3><A name='Blur'>Blur</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/blur_0.125.jpg">
+      <img width=200 src="output/blur_0.125.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/blur_2.jpg">
+      <img width=200 src="output/blur_2.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/blur_8.jpg">
+      <img width=200 src="output/blur_8.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Blur 0.125 </td>
+    <td align="center"> Blur 2 </td>
+    <td align="center"> Blur 8 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      output/blur_0.125.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -blur 0.125 <br>
+      output/blur_2.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -blur 2 <br>
+      output/blur_8.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -blur 8 <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Sharpen'>Sharpen</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/sharpen.jpg">
+      <img width=200 src="output/sharpen.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Sharpen </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      output/sharpen.jpg: input/princeton_small.jpg <br>
+       $(EXE) $^ $@ -sharpen <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='EdgeDetect'>Edge detect</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/edgedetect.jpg">
+      <img width=200 src="output/edgedetect.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Edge detect </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      output/edgedetect.jpg: input/princeton_small.jpg <br>
+        $(EXE) $^ $@ -edge <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Scale'>Scale</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/scaleinput.jpg">
+      <img src="input/scaleinput.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/scale_gaussian.jpg">
+      <img src="output/scale_gaussian.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/scale_point.jpg">
+      <img src="output/scale_point.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/scale_bilinear.jpg">
+      <img src="output/scale_bilinear.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Gaussian 0.3 0.3 </td>
+    <td align="center"> Point 0.3 0.3 </td>
+    <td align="center"> Bilinear 0.3 0.3 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+    output/scale_gaussian.jpg: input/scaleinput.jpg <br>
+      $(EXE) $^ $@ -gaussian_sampling -scale 0.3 0.3 <br>
+    output/scale_point.jpg: input/scaleinput.jpg <br>
+      $(EXE) $^ $@ -point_sampling -scale 0.3 0.3 <br>
+    output/scale_bilinear.jpg: input/scaleinput.jpg <br>
+      $(EXE) $^ $@ -bilinear_sampling -scale 0.3 0.3 <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Composite'>Composite</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/comp_background.jpg">
+      <img width=200 src="input/comp_background.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="input/comp_foreground.jpg">
+      <img width=200 src="input/comp_foreground.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="input/comp_mask.jpg">
+      <img width=200 src="input/comp_mask.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/composite.jpg">
+      <img width=200 src="output/composite.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Base </td>
+    <td align="center"> Top </td>
+    <td align="center"> Alpha channel of top </td>
+    <td align="center"> Result </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+    output/composite.jpg: input/comp_background.jpg <br>
+      $(EXE) $^ $@ -composite input/comp_background.jpg input/comp_foreground.jpg input/comp_mask.jpg 0 <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+</body>
+</html>
