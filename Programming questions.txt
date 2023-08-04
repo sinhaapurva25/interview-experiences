@@ -1,0 +1,62 @@
+Recently Asked DSA Interview Questions in Product Based Companies Like Amazon Codenation Microsoft Adobe Media.net D. E. Shaw Research Goldman Sachs Etc.. 
+
+Tree:
+
+- Largest value in each level of Binary Tree (asked in Amazon)
+- Single Valued Subtree (asked in Media.net)
+- Minimum distance between two given nodes (asked in Amazon)
+- Maximum sum leaf to root path (asked in Morgan Stanley)
+- Check if Subtree (asked in Paytm)
+- Construct Tree from Preorder Traversal (asked in Amazon)
+- Clone Binary Tree with random pointer (asked in DE Shaw)
+- Maximum sum of non-adjacent nodes (asked in Morgan Stanley)
+- Burn Binary Tree (asked in Adobe, Amazon, Google)
+- Largest BST in a Binary Tree (asked in Microsoft)
+- BST to Greater Sum Tree (asked in Amazon)
+- BST to Max Heap (asked in DE Shaw)
+- Remove BST keys outside given range (asked in Samsung)
+- Sorted Linked List to BST (asked in Amazon)
+
+Graph:
+
+- Bridges in a graph (asked in Amazon)
+- Number of islands (asked in Amazon)
+- Flood fill algorithm (asked in Microsoft)
+- Replace Os with Xs (asked in Amazon)
+- Topological Sort (asked in DE Shaw)
+- Shortest Prime Path (asked in Adobe)
+- Word Ladder (asked in Flipkart)
+- Alien Dictionary (asked in Amazon)
+- Number of Provinces (asked in Microsoft)
+
+Greedy:
+
+- Maximum sum without adjacents (asked in DE Shaw)
+- Binary Searchable elements (asked in Microsoft, Media.net)
+- Minimum Platforms needed (asked in Microsoft)
+
+Dynamic Programming:
+
+- Gold mine problem (asked in Samsung)
+- Dice throw problem (asked in Microsoft)
+- Count ways to reach the Nth stair (asked in Adobe)
+- Max of Min (asked in Amazon)
+- Subset sum problem (asked in Amazon)
+- Coin change (asked in Samsung)
+- Egg dropping puzzle (asked in Samsung)
+- Longest Palindromic substring (asked in Microsoft)
+- Longest Length of Arithmetic Progression (asked in Adobe)
+- Wildcard Matching (asked in Adobe)
+- LCS of 3 strings (asked in DE Shaw)
+- Special Keyboard (asked in Microsoft)
+- 2D Kadane (asked in Microsoft)
+- Maximum sum of elements not part of LIS (asked in Flipkart)
+- Box stacking (asked in Amazon)
+- Weighted Job Scheduling (asked in Microsoft)
+- Get minimum squares (asked in Amazon)
+- Maximum profit (asked in Amazon)
+- Longest increasing path in Matrix (asked in DE Shaw)
+- Minimum operations to convert array A to B (asked in Codenation, Google)
+- Number of Words with K maximum distinct vowels (asked in Adobe)
+- Palindrome Partitioning (asked in Google)
+- Count occurrences of a given word in a 2D array (asked in Paytm)
