@@ -1,0 +1,5 @@
+https://in.linkedin.com/in/rohit-lapshetwar
+
+spark.hql("select country from country_table order by city_population desc limit 5")
+
+spark.hql("select couuntry,sum(*) as pop from country_table group by country order by pop desc limit 5")

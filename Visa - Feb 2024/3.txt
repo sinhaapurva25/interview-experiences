@@ -1,0 +1,33 @@
+**Problem Statement:**
+ 
+Using Apache Spark, write a Scala program that reads a CSV file, filters rows based on a certain condition The condition: is to filter out the rows where the age is greater than 30 and saves the resulting DataFrame as a Parquet file.
+ 
+**Input:**
+ 
+The program takes the path of a CSV file. The CSV file has three columns: `id`, `name`, and `age`.
+ 
+**Output:**
+ 
+The program should write a Parquet file with the same columns, but only including rows where `age` is greater than 30.
+ 
+**Requirements:**
+ 
+1. The program should be written in Scala using Apache Spark.
+2. The program should use the DataFrame API.
+3. The program should handle any exceptions during file reading/writing.
+ 
+**Note:**
+ 
+You may assume that the CSV file is well-formed and that the `age` column always contains integer values.
+ 
+has context menu
+
+val df1 = spark.read.csv("\C:").option("inferschema", true)
+def adult(n:Int) : String = { if n > 30 Y else N}
+val dfreult = df1.withColumn(`adultorNot`, adult()).filter(x => adultornot(x) == Y)
+dfresult.write.parquet("\Writelocation")
+
+=======
+//500 mb
+// 128 mb
+4 files

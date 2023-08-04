@@ -1,0 +1,12 @@
+text
+The program should be written in Scala using Apache Spark.
+The program should use the DataFrame API.
+Words should be split by whitespace characters.
+The frequency of a word is defined as the number of times it appears in the text.
+
+val rdd1 = rdd.flatMap(x => x.split(" "))
+val rdd2 = rdd1.map(x => (x, 1))
+val rdd3 = rdd2.reduceByKey((x, y) => x+y)
+val rdd4 = rdd3.map((x, y) => (y, x))
+val rdd5 = rdd4.sortByKey().map((x, y) => (y, x))
+rdd5.collect(10)

@@ -1,0 +1,22 @@
+**Problem Statement:**
+ 
+Given a DataFrame with a text column, write a Spark program in Scala to find the top 10 most frequently occurring words in the text.
+ 
+**Input:**
+ 
+The input is a DataFrame with a column named "text". Each row in the DataFrame represents a document.
+ 
+**Output:**
+ 
+The output should be a DataFrame with two columns: "word" and "count". Each row should represent a word and its frequency in the text. The DataFrame should contain the top 10 most frequent words, ordered by their frequency in descending order.
+ 
+**Requirements:**
+ 
+1. The program should be written in Scala using Apache Spark.
+2. The program should use the DataFrame API.
+3. Words should be split by whitespace characters.
+4. The frequency of a word is defined as the number of times it appears in the text.
+ 
+**Note:**
+ 
+You may assume that the input DataFrame is non-empty and that the "text" column contains non-null strings.

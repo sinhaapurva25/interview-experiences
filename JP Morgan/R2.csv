@@ -1,0 +1,13 @@
+level;date-time
+info;22-03-2024
+info;21-03-2024
+debug;20-03-2024
+warn;21-03-2024
+
+year 2024
+level | jan | feb | mar | apr
+info | null | null | 2 | null
+debug | null | null 1 |
+
+
+I said partition by -> Interviewer said -> group By or reduceBy

@@ -1,3 +1,8 @@
+# Interviewer
+
+https://in.linkedin.com/in/iamrajivgupta
+
+# TECHNICAL ROUND 1
 s = 'ABCDAB'
 
 duplicate characters

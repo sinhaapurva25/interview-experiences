@@ -1,0 +1,32 @@
+--spark-submit --conf --num-executor=2 --conf --executor-memory=2 --drivers=1 --number-ofexecutors=10 --master=local[*] com.sc.rt.sparkprocessor
+
+====================================
+
+val sc = SparkSession.builder.appName("trial").master(local[*]).getOrCreate.enableHiveSupport
+
+val rdd1 = sc.createDataframe(sc.textFile(r'\path>'))
+
+case class address(street:string, zip: int)
+
+val schema_var = StructType(List(StructtField("col1", Int),
+			     StructtField("col2", timestamp),
+			     StructtField("col3", address)
+))
+
+val df1 = rdd1.schema(schema_var)
+
+
+def street(x: address) = String: { x.split(" ")(0)}
+def zip(x: address) = String: { x.split(" ")(1)}
+val street_udf = udf(street(_:String): String)
+val zip_udf = udf(zip(_:String): String)
+
+val df2 = df1.withColumn("street", street_udf("address")).withColumn("zip", zip_udf("address"))
+
+val temp_df1_table = spark.createorReplaceTempView(df1)
+val res = spark.sql("select col1, col2, explode(address.split(" ")) from temp_df1_table")
+
+====================================================
+Case Class vs Class
+Traits
+

@@ -1,0 +1,18 @@
+Consider a Hive database with two tables: Sales and Products.
+The Sales table has the following fields:
+SaleID (integer)
+ProductID (integer)
+SaleDate (date)
+Quantity (integer)
+Price (float)
+The Products table has the following fields:
+ProductID (integer)
+ProductName (string)
+Category (string)
+Write a Hive SQL query to find out the top 5 products (ProductName) that have generated the most revenue (Quantity * Price) in the 'Electronics' category for the year 2020. Include the product name and the total revenue in your result.
+
+val joined_table = Sales.(products, Sales("ProductID") === Products("ProductID"), "inner")
+val filtered = joined_table.filter(x = > joined_table('Category')==Electronics)
+val res1 = spark.sql("select ProductName, (Quantity*Price) as price from filtered group by 'SaleDate' orderBy desc price limit 5")
+val res1 = spark.sql("select ProductName, (Quantity*Price) as price from filtered group by 'SaleDate' orderBy price")
+ 

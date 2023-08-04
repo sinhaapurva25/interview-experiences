@@ -1,0 +1,12 @@
+Emp_tbl
+DeptID EmpName Salary
+Engg Sam 1000
+Engg Smith 2000
+HR Denis 1500
+HR Danny 3000
+IT David 2000
+IT John 3000
+
+val res = spark.sql("select deptid, salary from emp group by deptid")
+
+val res2 = spark.sql("select rank(2) ")
