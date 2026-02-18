@@ -18,6 +18,8 @@ What is Scala called lazy evaluation?
 
 What is Data Skewing? How to resolve it?
 
+What are Monads?
+
 What is a broadcast join?
 
 What do you do when a Spark job fails?
